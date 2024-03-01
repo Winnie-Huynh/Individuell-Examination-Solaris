@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="text-container">
+        <h1 class="header-text">SOLSYSTEMET</h1>
+        <h2 class="title-name">S O L A R I S</h2>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Sök på en planet...">
+            <button id="searchButton" class="search-button">Sök</button>
+        </div>
+    </section>
+    <section class="solar-system">
+        <div id="sun" class="planet"></div>
+        <div id="mercury" class="planet"></div>
+        <div id="venus" class="planet"></div>
+        <div id="earth" class="planet"></div>
+        <div id="mars" class="planet"></div>
+        <div id="jupiter" class="planet"></div>
+        <div id="saturn" class="planet">
+            <div id="saturn-ring"></div>
+        </div>
+        <div id="uranus" class="planet"></div>
+        <div id="neptune" class="planet"></div>
+    </section>
+    <section id="modal-container">
+        <div id="modalContent" class="modal-content"></div>
+    </section>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="modules/modal.js"></script>
+    <script type="module" src="modules/api.js"></script>
+</body>
+</html>
